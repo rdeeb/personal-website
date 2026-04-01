@@ -1,0 +1,17 @@
+[
+  {
+    "name": "CV",
+    "url": "/cv",
+    "icon": "Briefcase"
+  },
+  {
+    "name": "Projects",
+    "url": "/projects",
+    "icon": "Grid3x3"
+  },
+  {
+    "name": "About",
+    "url": "/about",
+    "icon": "User"
+  }
+]

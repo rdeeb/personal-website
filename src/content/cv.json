@@ -1,0 +1,132 @@
+[
+  {
+    "id": "exp-1",
+    "company": "X-Team",
+    "position": "Senior Full Stack Developer",
+    "period": "04/2021 - Present",
+    "brief": "Remote-first senior engineering work across multiple client engagements focused on modern frontend delivery and API integration.",
+    "skills": ["React", "TypeScript", "GraphQL", "Go", "Node.js", "AWS"],
+    "details": "Led frontend development for Kaplan's B2B shopping cart. Built and integrated complex frontend functionality with backend services through GraphQL operations. Helped migrate legacy systems to modern React applications. Delivered features across legacy Java 8 / AngularJS and modern Go / React stacks.",
+    "url": "https://x-team.com"
+  },
+  {
+    "id": "exp-2",
+    "company": "Lumenalta",
+    "position": "Sr. Javascript Developer",
+    "period": "10/2019 - 04/2020",
+    "brief": "Mobile product delivery for a React Native application serving the US market.",
+    "skills": ["React Native", "GraphQL", "Apollo", "JavaScript"],
+    "details": "Developed a React Native application for WhoYouGot, a peer-to-peer betting platform. Collaborated with an Apollo GraphQL backend to support performant mobile experiences. Worked in agile development cycles to deliver features and updates on time.",
+    "url": "https://lumenalta.com"
+  },
+  {
+    "id": "exp-3",
+    "company": "Cerco Solidario",
+    "position": "Full Stack Developer",
+    "period": "04/2020 - 04/2021",
+    "brief": "Developed a Contact Tracing App with a custom BLE communication protocol.",
+    "skills": ["Ruby on Rails", "React", "React Native", "BLE"],
+    "details": "Developed a Rails Backend and a React frontend for government use. Created a React Native app to manage and store contacts via BLE, syncing them with servers. Presented the solution to the government free of charge during the pandemic.",
+    "url": ""
+  },
+  {
+    "id": "exp-4",
+    "company": "ProductPlan",
+    "position": "Senior Full Stack Developer",
+    "period": "12/2017 - 10/2019",
+    "brief": "Worked on a global roadmap platform, contributing to both React frontend and Ruby on Rails backend.",
+    "skills": ["React", "Redux", "Redux Saga", "Ruby on Rails", "SaaS"],
+    "details": "Built and maintained product features across the stack. Contributed to the 'Parking Lot' feature, shaping frontend architecture. Focused on improving first-time user experience and reducing onboarding friction. Collaborated closely with product stakeholders.",
+    "url": "https://www.productplan.com"
+  },
+  {
+    "id": "exp-5",
+    "company": "Admios",
+    "position": "Senior Full Stack Developer",
+    "period": "07/2015 - 12/2017",
+    "brief": "Delivered software for US-based clients in a nearshore development environment.",
+    "skills": ["JavaScript", "React", "Node.js", "Agile"],
+    "details": "Worked for clients like Sparkcentral, Sentient, Born, Tacit Knowledge, and Zignal Labs. Adapted quickly across multiple business domains and product contexts. Strengthened distributed collaboration across time zones.",
+    "url": "https://admios.com"
+  },
+  {
+    "id": "exp-6",
+    "company": "Rootstack",
+    "position": "Senior Software Developer",
+    "period": "01/2015 - 07/2015",
+    "brief": "Worked on backend systems, REST API-driven applications, and internal technical enablement.",
+    "skills": ["Drupal 7", "Drupal 8", "AngularJS", "Symfony 2", "REST API"],
+    "details": "Developed backend systems using Drupal 7 and Drupal 8. Implemented a CRM frontend with AngularJS integrated with a REST API built in Symfony 2. Promoted Symfony as an alternative to Drupal and delivered internal training.",
+    "url": ""
+  },
+  {
+    "id": "exp-7",
+    "company": "Clic Brand Marketing",
+    "position": "IT Manager",
+    "period": "01/2012 - 12/2014",
+    "brief": "Led technical work inside a marketing company, focused on campaign-supporting systems.",
+    "skills": ["IT Management", "Web Development", "Marketing Tech"],
+    "details": "Managed the IT department and supported internal technical operations. Developed a sweepstake and raffle system used as a marketing tool for Fantastic Casinos. Built promotional systems for engagement campaigns.",
+    "url": ""
+  },
+  {
+    "id": "exp-8",
+    "company": "Vizifit",
+    "position": "Senior Frontend Developer",
+    "period": "01/2012 - 12/2012",
+    "brief": "Freelance engagement for a startup product focused on frontend delivery and API integration.",
+    "skills": ["JSON API", "PayPal Integration", "Facebook SDK", "Frontend Frameworks"],
+    "details": "Developed the frontend for the JSON API. Built an ORM-like interface to simplify frontend interaction with backend services. Integrated PayPal for payments and Facebook for registration and login.",
+    "url": ""
+  },
+  {
+    "id": "exp-9",
+    "company": "Inbox Interactive",
+    "position": "Senior Software Developer",
+    "period": "01/2012 - 12/2012",
+    "brief": "Contract work for a marketing agency delivering small website projects for clients.",
+    "skills": ["Web Development", "Client Services"],
+    "details": "Worked as a contractor on small website projects in a client-service environment. Contributed to short-turnaround delivery across multiple client requests.",
+    "url": ""
+  },
+  {
+    "id": "exp-10",
+    "company": "Panama IEM",
+    "position": "IT Manager",
+    "period": "01/2011 - 12/2012",
+    "brief": "Led a small team responsible for core websites and digital properties for a marketing company.",
+    "skills": ["Team Leadership", "Web Management", "Digital Strategy"],
+    "details": "Oversaw the main website and related web properties. Led the creation of realtravelfeedback.com. Managed maintenance for multiple company sub-sites supporting travel and hospitality.",
+    "url": ""
+  },
+  {
+    "id": "exp-11",
+    "company": "Admios S.A.",
+    "position": "Software Developer",
+    "period": "01/2010 - 12/2011",
+    "brief": "Worked on .NET projects in a software development services environment.",
+    "skills": [".NET", "WPF"],
+    "details": "Contributed to .NET projects built with WPF. Built experience in desktop-oriented software delivery before transitioning more heavily into web product engineering.",
+    "url": ""
+  },
+  {
+    "id": "exp-12",
+    "company": "iSyndica",
+    "position": "Software Developer",
+    "period": "01/2009 - 12/2010",
+    "brief": "Worked on an online content distribution platform for photographers.",
+    "skills": ["Frontend Development", "Content Platforms"],
+    "details": "Helped maintain the frontend of the application. Supported ongoing development for a media and content distribution platform.",
+    "url": ""
+  },
+  {
+    "id": "exp-13",
+    "company": "Copa Airlines",
+    "position": "eBusiness Analyst",
+    "period": "01/2008 - 12/2009",
+    "brief": "Contributed to customer-facing web experiences during a major eCommerce redesign for a major airline.",
+    "skills": ["eCommerce", "SEO", "SEM", "Web Analytics", "Usability"],
+    "details": "Implemented the technological solution for the Origins & Destinations list and departure date calendar. Contributed to conversion-supporting features inside the booking journey. Maintained SEO and SEM campaigns.",
+    "url": ""
+  }
+]

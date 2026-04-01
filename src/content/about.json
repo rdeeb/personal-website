@@ -1,0 +1,18 @@
+{
+  "name": "Ramy Deeb",
+  "position": "Senior Full Stack TypeScript Developer",
+  "bio": "Senior Full Stack Developer with 20+ years of experience building modern web applications, with particularly strong depth in React, TypeScript, JavaScript, API-driven frontend development, and product-focused delivery. Proven track record building complex user interfaces, integrating frontend applications with REST and GraphQL services, modernizing legacy systems, and shipping maintainable features in remote Agile teams. Strong in responsive UI development, reusable components, code quality, debugging, and translating product and design requirements into clean, high-performing experiences.",
+  "achievements": [
+    "20+ years of software development experience",
+    "Expertise in React, TypeScript, and modern JavaScript",
+    "Strong background in API integration and cloud infrastructure",
+    "Proven track record in remote Agile teams"
+  ],
+  "interests": [
+    "3D Printing and Home Automation",
+    "Scale model building and painting",
+    "Photography and Videography",
+    "Building community through technology",
+    "Exploring new frameworks and languages"
+  ]
+}

@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectsPage from '../components/ProjectCard/ProjectsPage.tsx';
+import projectsData from '../content/projects.json';
+---
+
+<Layout>
+	<main class="projects-page">
+		<ProjectsPage projects={projectsData} client:load />
+	</main>
+</Layout>
+
+<style>
+	.projects-page {
+		padding: 0 2rem 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 768px) {
+		.projects-page {
+			padding: 1rem;
+		}
+	}
+</style>

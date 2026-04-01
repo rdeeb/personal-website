@@ -1,0 +1,33 @@
+.panel {
+  background: var(--interface-bg);
+  color: var(--interface-text);
+  border: 1px solid var(--interface-border-dark);
+  border-radius: var( --ui-border-radius);
+}
+
+.panel-title {
+  padding: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--interface-border-light);
+  box-shadow: inset 1px 1px 0 0 var(--white);
+}
+
+.panel-title-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel-icon {
+  display: flex;
+  align-items: center;
+}
+
+.panel-title h2 {
+  margin: 0;
+}
+
+.panel-content {
+  padding: 10px;
+  box-shadow: inset 1px 1px 0 0 var(--white);
+}

@@ -1,0 +1,32 @@
+.skills-bar-container {
+  width: 100%;
+  margin-bottom: 12px;
+  font-family: var(--font-play);
+}
+
+.skills-bar-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: var(--interface-text);
+  font-family: var(--font-vt323);
+  text-transform: uppercase;
+}
+
+.skills-bar-track {
+  height: 16px;
+  background: var(--white);
+  border: 1px solid var(--interface-border-dark);
+  border-radius: var(--ui-border-radius);
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.4), 
+              inset -1px -1px 0 0 rgba(255, 255, 255, 0.8);
+}
+
+.skills-bar-fill {
+  height: 100%;
+  transition: width 0.3s ease-out;
+  box-shadow: none; /* Removed inner shadow from the fill to make it look "inside" the embossed track */
+}

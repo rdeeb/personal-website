@@ -1,0 +1,43 @@
+.skill-filter-panel {
+  background: var(--interface-bg);
+  border: 1px solid var(--interface-border-dark);
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 0 var(--interface-border-dark);
+  border-radius: var(--ui-border-radius);
+}
+
+.skill-filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skill-filter-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--black);
+}
+
+
+.skill-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-filter-item .btn-inner {
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  box-shadow: none;
+}
+
+.skill-filter-item:hover .btn-inner {
+  filter: brightness(1.1);
+}
+
+.skill-filter-item.active .btn-inner {
+  box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.2);
+}

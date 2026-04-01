@@ -1,0 +1,27 @@
+[
+  {
+    "name": "React",
+    "value": 90,
+    "color": "var(--blue-150)"
+  },
+  {
+    "name": "TypeScript",
+    "value": 85,
+    "color": "var(--azure-150)"
+  },
+  {
+    "name": "Node.js",
+    "value": 80,
+    "color": "var(--green-150)"
+  },
+  {
+    "name": "TDD",
+    "value": 75,
+    "color": "var(--orange-150)"
+  },
+  {
+    "name": "AI Agentic Development",
+    "value": 70,
+    "color": "var(--red-175)"
+  }
+]

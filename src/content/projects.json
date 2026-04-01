@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Printfleet.app",
+    "description": "Personal product project started in 01/2026 to build a management suite for 3D print farms. Built with TypeScript, Next.js, Prisma, WebSockets, and Server-Sent Events to create responsive, real-time operational interfaces connected to Bambu Lab and Klipper-based environments.",
+    "technologies": [
+      "TypeScript",
+      "Next.js",
+      "Prisma",
+      "WebSockets",
+      "Server-Sent Events",
+      "Real-Time UI",
+      "Bambu Lab",
+      "Klipper"
+    ],
+    "github_url": "",
+    "live_url": "https://www.printfleet.app"
+  },
+  {
+    "name": "Car Mechanic Simulator 2021 save game editor",
+    "description": "A save-file editor for Car Mechanic Simulator 2021 that runs entirely in your browser — no installation, no Python, no server.",
+    "technologies": [
+      "React",
+      "Binary file parsing",
+      "Python"
+    ],
+    "github_url": "https://github.com/rdeeb/cms2021-save-editor",
+    "live_url": "https://rdeeb.github.io/cms2021-save-editor/"
+  },
+  {
+    "name": "Kaplan B2B Shopping Cart",
+    "description": "Built React + TypeScript frontend features for a B2B shopping cart, integrated product workflows with backend services through GraphQL, and supported migration from a legacy PHP + Flex application to a modern frontend architecture.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "GraphQL",
+      "Frontend Architecture",
+      "API Integration",
+      "Legacy Modernization"
+    ],
+    "github_url": "",
+    "live_url": ""
+  },
+  {
+    "name": "ProductPlan Parking Lot",
+    "description": "Contributed to the Parking Lot feature for a product roadmap platform, working with React, Redux, and Redux Saga while helping shape reusable frontend patterns and a better first-time user experience.",
+    "technologies": [
+      "React",
+      "Redux",
+      "Redux Saga",
+      "Frontend Architecture",
+      "Reusable Components",
+      "User Experience"
+    ],
+    "github_url": "",
+    "live_url": "https://www.productplan.com/"
+  },
+  {
+    "name": "Figuritas Repetidas",
+    "description": "Small side project created with close friends before the 2024 Panini World Cup album cycle. Built a simple React frontend with a Laravel backend to manage repeated stickers and support a clean, easy-to-use interface for collectors.",
+    "technologies": [
+      "React",
+      "Laravel",
+      "Frontend Development",
+      "REST-Style Integration",
+      "Usability"
+    ],
+    "github_url": "",
+    "live_url": ""
+  },
+  {
+    "name": "Elecciones Panamá",
+    "description": "Built with three collaborators between 03/2024 and 04/2024. Created an application for exploring long-form candidate government plans through a React frontend integrated with Node.js backend services and an in-house RAG solution powered by PostgreSQL and pgvector.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "pgvector",
+      "RAG",
+      "API Integration"
+    ],
+    "github_url": "",
+    "live_url": ""
+  },
+  {
+    "name": "Sun Life Login Team",
+    "description": "Security-sensitive authentication work across legacy and modern stacks, improving login reliability and preserving user experience while addressing vulnerabilities and integration issues.",
+    "technologies": [
+      "Go",
+      "React",
+      "Java 8",
+      "AngularJS",
+      "Authentication",
+      "Security Remediation"
+    ],
+    "github_url": "",
+    "live_url": ""
+  },
+  {
+    "name": "Custom CRM at Rootstack",
+    "description": "Helped implement a CRM frontend with AngularJS connected to a Symfony REST API, reinforcing API-driven development and collaboration across frontend and backend concerns.",
+    "technologies": [
+      "AngularJS",
+      "Symfony",
+      "REST APIs",
+      "Frontend Development",
+      "CRM"
+    ],
+    "github_url": "",
+    "live_url": ""
+  },
+  {
+    "name": "Copa Origins & Destinations Calendar",
+    "description": "Implemented customer-facing booking functionality for Origins & Destinations and the departure date calendar during a major airline eCommerce redesign, supporting usability and conversion-oriented web flows.",
+    "technologies": [
+      "JavaScript",
+      "Frontend Development",
+      "eCommerce",
+      "Customer Experience"
+    ],
+    "github_url": "",
+    "live_url": ""
+  },
+  {
+    "name": "realtravelfeedback.com",
+    "description": "Supported the creation of a travel feedback platform and maintenance of related web properties for Costa Rica Expeditions, contributing to user-facing web experiences in a travel domain.",
+    "technologies": [
+      "Web Development",
+      "Travel",
+      "User-Facing Applications"
+    ],
+    "github_url": "",
+    "live_url": ""
+  }
+]

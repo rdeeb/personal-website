@@ -1,0 +1,116 @@
+.btn {
+  display: inline-flex;
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-vt323);
+  font-size: 14px;
+  color: var(--white);
+  text-transform: uppercase;
+  position: relative;
+  transition: transform 0.1s ease;
+  vertical-align: middle;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--interface-bg);
+  border: 1px solid var(--interface-border-dark);
+  box-shadow: inset 2px 2px 0 0 rgba(255, 255, 255, 0.5),
+              inset -2px -2px 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: var(--ui-border-radius);
+  color: var(--interface-text);
+  width: 100%;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-text {
+  line-height: 1;
+}
+
+.btn--small .btn-inner {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.btn--large .btn-inner {
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+/* Color Variants */
+.btn--default .btn-inner {
+  background: var(--interface-bg);
+  color: var(--interface-text);
+}
+
+.btn--blue .btn-inner {
+  background: var(--blue-100);
+  color: var(--white);
+}
+
+.btn--azure .btn-inner {
+  background: var(--azure-150);
+  color: var(--white);
+}
+
+.btn--purple .btn-inner {
+  background: var(--purple-150);
+  color: var(--white);
+}
+
+.btn--rose .btn-inner {
+  background: var(--rose-175);
+  color: var(--white);
+}
+
+.btn--teal .btn-inner {
+  background: var(--teal-150);
+  color: var(--white);
+}
+
+.btn--green .btn-inner {
+  background: var(--green-150);
+  color: var(--white);
+}
+
+.btn--yellow .btn-inner {
+  background: var(--yellow-100);
+  color: var(--blue-200);
+}
+
+.btn--orange .btn-inner {
+  background: var(--orange-150);
+  color: var(--white);
+}
+
+.btn--red .btn-inner {
+  background: var(--red-175);
+  color: var(--white);
+}
+
+/* Hover effects */
+.btn:hover:not(:disabled) .btn-inner {
+  filter: brightness(1.1);
+}

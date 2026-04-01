@@ -1,0 +1,32 @@
+---
+import Sidebar from '../components/Sidebar/Sidebar';
+import Footer from '../components/Footer.astro';
+import '../styles/normalize.css';
+import '../styles/globals.css';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>Ramy Deeb | Senior Fullstack Developer</title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<Sidebar />
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<slot />
+				</div>
+				<Footer />
+			</div>
+		</div>
+	</body>
+</html>

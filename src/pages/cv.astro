@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CVPage from '../components/CVPage';
+import cvData from '../content/cv.json';
+---
+
+<Layout>
+	<main class="cv-page">
+		<CVPage initialItems={cvData} client:load />
+	</main>
+</Layout>
+
+<style>
+	.cv-page {
+		padding: 0 2rem 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 768px) {
+		.cv-page {
+			padding: 1rem;
+		}
+	}
+</style>
+
+<style is:global>
+  .cv-page-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .cv-page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+    text-shadow: 2px 2px 0 var(--interface-border-light);
+  }
+
+  .cv-page-header p {
+    font-size: 1.2rem;
+    color: var(--interface-text);
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 3rem;
+    border: 1px dashed var(--interface-border-dark);
+    background: var(--interface-bg);
+    color: var(--interface-text);
+    border-radius: var(--ui-border-radius);
+  }
+
+  .no-results .clear-filters-btn {
+    margin-top: 1rem;
+    background: var(--interface-border-dark);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: var(--font-vt323);
+    font-size: 1.1rem;
+    border-radius: var(--ui-border-radius);
+  }
+</style>

@@ -1,0 +1,28 @@
+.project-card-panel {
+  height: 100%;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--interface-text);
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}

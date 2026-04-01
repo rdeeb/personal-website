@@ -1,0 +1,117 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --interface-text: #505b7a;
+  --interface-bg: #bfd7f1;
+  --interface-border-dark: #505b7a;
+  --interface-border-light: #93b0e3;
+
+  /* Blue (navy → pale); higher step = darker */
+  --blue-200: #12173d;
+  --blue-150: #293268;
+  --blue-100: #464b8c;
+  --blue-80: #6b74b2;
+  --blue-60: #909edd;
+  --blue-40: #c1d9f2;
+
+  /* Azure / cyan (saturated blues) */
+  --azure-200: #36277f;
+  --azure-175: #354ab2;
+  --azure-150: #4185d8;
+  --azure-125: #5ab9e5;
+  --azure-100: #a5e6ff;
+
+  /* Purple / violet */
+  --purple-200: #29174c;
+  --purple-175: #3f233c;
+  --purple-150: #412866;
+  --purple-125: #66334b;
+  --purple-100: #643499;
+  --purple-75: #8c51cc;
+  --purple-50: #b991f2;
+
+  /* Rose / pink */
+  --rose-200: #8c4b63;
+  --rose-175: #c16a7d;
+  --rose-150: #e5959f;
+  --rose-100: #ffccd0;
+
+  /* Teal */
+  --teal-200: #0a2a33;
+  --teal-150: #0f4a4c;
+  --teal-100: #14665b;
+
+  /* Green */
+  --green-200: #22896e;
+  --green-150: #42bc7f;
+  --green-100: #8cff9b;
+
+  /* Warm */
+  --yellow-100: #ffe091;
+  --orange-150: #ff965f;
+  --red-200: #872a38;
+  --red-175: #d83843;
+  --red-150: #cc5250;
+  --red-100: #ff6866;
+
+  /* UI variables */
+  --ui-border-radius: 3px;
+
+  /* Font Families */
+  --font-vt323: 'VT323', monospace;
+  --font-play: 'Play', sans-serif;
+}
+
+body {
+  font-family: var(--font-play);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-vt323);
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.page-content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex-grow: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-text {
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  box-shadow: 1px 1px 0 0 var(--black);
+}
