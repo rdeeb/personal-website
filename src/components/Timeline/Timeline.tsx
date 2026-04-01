@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { getSkillColor } from '../../utils/skillColors';
 import Button from '../Button/Button';
 import Pill from '../Pill/Pill';
@@ -21,10 +21,31 @@ interface TimelineProps {
 
 const TimelineItem = ({ item, index }: { item: CVItem; index: number }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const itemRef = useRef<HTMLDivElement>(null);
   const isLeft = index % 2 === 0;
 
+  useEffect(() => {
+    const el = itemRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className={`timeline-item ${isLeft ? 'left' : 'right'}`}>
+    <div
+      ref={itemRef}
+      className={`timeline-item ${isLeft ? 'left' : 'right'}${isVisible ? ' is-visible' : ''}`}
+    >
       <div className="timeline-dot" />
       <div className="timeline-content-wrapper">
         <div className="timeline-card">
@@ -52,7 +73,7 @@ const TimelineItem = ({ item, index }: { item: CVItem; index: number }) => {
             </div>
 
             {isExpanded && (
-              <div className="timeline-details">
+              <div className="timeline-details" id={`timeline-details-${item.id}`}>
                 <p>{item.details}</p>
                 {item.url && (
                   <Button 
@@ -70,10 +91,12 @@ const TimelineItem = ({ item, index }: { item: CVItem; index: number }) => {
             )}
             
             <div className="timeline-actions">
-              <Button 
+              <Button
                 variant="default"
                 size="small"
                 onClick={() => setIsExpanded(!isExpanded)}
+                aria-expanded={isExpanded}
+                aria-controls={`timeline-details-${item.id}`}
               >
                 {isExpanded ? 'View Less' : 'View More'}
               </Button>

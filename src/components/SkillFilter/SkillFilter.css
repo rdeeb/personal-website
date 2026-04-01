@@ -1,8 +1,8 @@
 .skill-filter-panel {
   background: var(--interface-bg);
   border: 1px solid var(--interface-border-dark);
-  padding: 20px;
-  margin-bottom: 30px;
+  padding: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
   box-shadow: 2px 2px 0 var(--interface-border-dark);
   border-radius: var(--ui-border-radius);
 }
@@ -17,18 +17,17 @@
 .skill-filter-header h3 {
   margin: 0;
   font-size: 1.1rem;
-  color: var(--black);
+  color: var(--blue-150);
 }
-
 
 .skill-filter-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: var(--spacing-3);
 }
 
 .skill-filter-item .btn-inner {
-  padding: 4px 12px;
+  padding: var(--spacing-1) var(--spacing-4);
   font-size: 0.85rem;
   transition: all 0.2s ease;
   box-shadow: none;

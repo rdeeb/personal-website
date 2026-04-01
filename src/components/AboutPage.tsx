@@ -11,12 +11,12 @@ const AboutPage = () => {
     <div className="about-page-container">
       <header className="about-page-header">
         <h1>About Me</h1>
-        <p>A little bit about who I am and what I do.</p>
+        <p>Background, achievements, and what keeps me busy outside of work.</p>
       </header>
 
       <div className="about-content">
         <section className="about-intro">
-          <Panel title="Hello, I'm Ramy!" icon={<User size={16} />} client:load>
+          <Panel title="Hello, I'm Ramy!" icon={<User size={16} />}>
             <div className="hero-content">
               <img alt="Ramy's profile picture" src={heroImg.src} className="profile-picture" />
               <div className="hero-text">
@@ -28,20 +28,20 @@ const AboutPage = () => {
 
         <div className="about-grid">
           <section className="about-achievements">
-            <Panel title="Key Achievements" icon={<Zap size={16} />} client:load>
+            <Panel title="Key Achievements" icon={<Zap size={16} />}>
               <ul className="about-list">
-                {aboutData.achievements.map((achievement, index) => (
-                  <li key={index}>{achievement}</li>
+                {aboutData.achievements.map((achievement) => (
+                  <li key={achievement}>{achievement}</li>
                 ))}
               </ul>
             </Panel>
           </section>
 
           <section className="about-interests">
-            <Panel title="Interests & Hobbies" icon={<Heart size={16} />} client:load>
+            <Panel title="Interests & Hobbies" icon={<Heart size={16} />}>
               <ul className="about-list">
-                {aboutData.interests.map((interest, index) => (
-                  <li key={index}>{interest}</li>
+                {aboutData.interests.map((interest) => (
+                  <li key={interest}>{interest}</li>
                 ))}
               </ul>
             </Panel>
@@ -58,8 +58,8 @@ const AboutPage = () => {
         .about-page-header h1 {
           font-size: 3rem;
           margin-bottom: 0.5rem;
-          color: var(--black);
-          text-shadow: 2px 2px 0 var(--interface-border-light);
+          color: var(--blue-200);
+          text-shadow: 2px 2px 0 var(--azure-125);
         }
 
         .about-page-header p {

@@ -14,8 +14,8 @@ const currentYear = new Date().getFullYear();
 
 <style>
   .site-footer {
-    margin-top: 60px;
-    padding: 30px 20px;
+    margin-top: var(--spacing-9);
+    padding: var(--spacing-8) var(--spacing-6);
     border-top: 1px solid var(--interface-border-light);
     color: var(--interface-text);
     font-family: var(--font-vt323);
@@ -42,7 +42,7 @@ const currentYear = new Date().getFullYear();
 
   .footer-links {
     display: flex;
-    gap: 20px;
+    gap: var(--spacing-6);
   }
 
   .footer-links a {

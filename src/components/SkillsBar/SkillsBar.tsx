@@ -17,10 +17,10 @@ const SkillsBar: React.FC<SkillsBarProps> = ({ name, value, color }) => {
         <span className="skills-bar-value">{clampedValue}%</span>
       </div>
       <div className="skills-bar-track">
-        <div 
-          className="skills-bar-fill" 
-          style={{ 
-            width: `${clampedValue}%`,
+        <div
+          className="skills-bar-fill"
+          style={{
+            transform: `scaleX(${clampedValue / 100})`,
             backgroundColor: color || 'var(--azure-150)'
           }}
         />

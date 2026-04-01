@@ -6,7 +6,7 @@
   background: transparent;
   cursor: pointer;
   font-family: var(--font-vt323);
-  font-size: 14px;
+  font-size: var(--font-ui-sm);
   color: var(--white);
   text-transform: uppercase;
   position: relative;
@@ -27,8 +27,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 8px 16px;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-5);
   background: var(--interface-bg);
   border: 1px solid var(--interface-border-dark);
   box-shadow: inset 2px 2px 0 0 rgba(255, 255, 255, 0.5),
@@ -50,13 +50,13 @@
 }
 
 .btn--small .btn-inner {
-  padding: 4px 8px;
-  font-size: 12px;
+  padding: var(--spacing-1) var(--spacing-2);
+  font-size: var(--font-ui-xs);
 }
 
 .btn--large .btn-inner {
-  padding: 12px 24px;
-  font-size: 18px;
+  padding: var(--spacing-4) var(--spacing-7);
+  font-size: var(--font-ui-base);
 }
 
 /* Color Variants */

@@ -12,8 +12,8 @@
 .projects-page-header h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: var(--black);
-  text-shadow: 2px 2px 0 var(--interface-border-light);
+  color: var(--blue-200);
+  text-shadow: 2px 2px 0 var(--azure-125);
 }
 
 .projects-page-header p {
@@ -21,10 +21,40 @@
   color: var(--interface-text);
 }
 
+.projects-results-count {
+  font-family: var(--font-vt323);
+  font-size: var(--font-ui-base);
+  color: var(--azure-175);
+  background: var(--interface-bg);
+  border: 1px solid var(--interface-border-light);
+  border-radius: var(--ui-border-radius);
+  display: inline-block;
+  padding: 2px var(--spacing-3);
+  margin-bottom: var(--spacing-5);
+  box-shadow: 1px 1px 0 var(--interface-border-dark);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
+}
+
+@keyframes card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card-wrapper {
+  animation: card-enter 0.3s ease both;
+  animation-delay: calc(var(--card-index, 0) * 0.05s);
+  height: 100%;
 }
 
 @media (max-width: 768px) {

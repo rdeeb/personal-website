@@ -3,24 +3,48 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import Footer from '../components/Footer.astro';
 import '../styles/normalize.css';
 import '../styles/globals.css';
+import '@fontsource/play/400.css';
+import '@fontsource/play/700.css';
+import '@fontsource/vt323/400.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Ramy Deeb | Senior Fullstack Developer',
+  description = 'Senior Full Stack Developer with 20+ years of experience specialising in React, TypeScript, and high-performance web applications.',
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="/favicon.ico" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=VT323&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
-		<title>Ramy Deeb | Senior Fullstack Developer</title>
+		<meta name="description" content={description} />
+		<title>{title}</title>
 	</head>
 	<body>
+		<header class="mobile-header" aria-label="Site header">
+			<span class="mobile-header-title">Ramy Deeb</span>
+			<button
+				class="mobile-menu-btn"
+				aria-controls="sidebar"
+				aria-expanded="false"
+				aria-label="Open navigation menu"
+			>
+				<span class="mobile-menu-icon" aria-hidden="true">
+					<span></span><span></span><span></span>
+				</span>
+			</button>
+		</header>
+		<div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
 		<div class="page-wrapper">
-			<Sidebar />
+			<Sidebar client:load />
 			<div class="page-content-wrapper">
 				<div class="page-content">
 					<slot />
@@ -28,5 +52,37 @@ import '../styles/globals.css';
 				<Footer />
 			</div>
 		</div>
+		<script>
+			const btn = document.querySelector('.mobile-menu-btn') as HTMLButtonElement;
+			const overlay = document.getElementById('sidebar-overlay') as HTMLElement;
+			const sidebar = document.querySelector('.sidebar') as HTMLElement;
+
+			function openMenu() {
+				sidebar?.classList.add('is-open');
+				overlay?.classList.add('is-visible');
+				btn?.setAttribute('aria-expanded', 'true');
+				btn?.setAttribute('aria-label', 'Close navigation menu');
+				document.body.style.overflow = 'hidden';
+			}
+
+			function closeMenu() {
+				sidebar?.classList.remove('is-open');
+				overlay?.classList.remove('is-visible');
+				btn?.setAttribute('aria-expanded', 'false');
+				btn?.setAttribute('aria-label', 'Open navigation menu');
+				document.body.style.overflow = '';
+			}
+
+			btn?.addEventListener('click', () => {
+				const isOpen = sidebar?.classList.contains('is-open');
+				isOpen ? closeMenu() : openMenu();
+			});
+
+			overlay?.addEventListener('click', closeMenu);
+
+			document.addEventListener('keydown', (e) => {
+				if (e.key === 'Escape' && sidebar?.classList.contains('is-open')) closeMenu();
+			});
+		</script>
 	</body>
 </html>

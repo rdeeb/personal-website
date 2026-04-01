@@ -4,7 +4,7 @@ import CVPage from '../components/CVPage';
 import cvData from '../content/cv.json';
 ---
 
-<Layout>
+<Layout title="CV | Ramy Deeb" description="Curriculum vitae of Ramy Deeb — a chronological record of professional experience, roles, and technologies across 20+ years in full-stack development.">
 	<main class="cv-page">
 		<CVPage initialItems={cvData} client:load />
 	</main>
@@ -33,8 +33,8 @@ import cvData from '../content/cv.json';
   .cv-page-header h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: var(--black);
-    text-shadow: 2px 2px 0 var(--interface-border-light);
+    color: var(--blue-200);
+    text-shadow: 2px 2px 0 var(--azure-125);
   }
 
   .cv-page-header p {

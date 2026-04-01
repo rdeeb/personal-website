@@ -30,10 +30,11 @@ const SkillFilter = ({ allSkills, selectedSkills, onToggleSkill, onClearFilters 
               key={skill}
               className={`skill-filter-item ${isActive ? 'active' : ''}`}
               onClick={() => onToggleSkill(skill)}
+              aria-pressed={isActive}
               style={isActive ? {
-                backgroundColor: 'var(--white)',
+                backgroundColor: skillColor,
                 borderColor: skillColor,
-                color: '#fff',
+                color: 'var(--white)',
                 boxShadow: 'inset 2px 2px 0 0 rgba(0, 0, 0, 0.3)'
               } : {
                 borderColor: skillColor,

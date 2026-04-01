@@ -52,15 +52,27 @@ const ProjectsPage: React.FC<ProjectsPageProps> = ({ projects }) => {
         onClearFilters={clearFilters}
       />
 
+      {selectedSkills.length > 0 && filteredProjects.length > 0 && (
+        <p className="projects-results-count">
+          Showing {filteredProjects.length} of {projects.length} projects
+        </p>
+      )}
+
       {filteredProjects.length > 0 ? (
         <div className="projects-grid">
           {filteredProjects.map((project, index) => (
-            <ProjectCard key={`${project.name}-${index}`} project={project} />
+            <div
+              key={`${project.name}-${selectedSkills.join(',')}`}
+              className="project-card-wrapper"
+              style={{ '--card-index': index } as React.CSSProperties}
+            >
+              <ProjectCard project={project} />
+            </div>
           ))}
         </div>
       ) : (
         <div className="no-results">
-          <p>No projects match the selected skills. Try clearing the filters.</p>
+          <p>No projects use all the selected technologies. Try removing a filter.</p>
           <button className="clear-filters-btn" onClick={clearFilters}>Clear Filters</button>
         </div>
       )}

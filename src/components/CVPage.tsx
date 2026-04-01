@@ -42,7 +42,7 @@ const CVPage = ({ initialItems }: CVPageProps) => {
     <div className="cv-page-container">
       <header className="cv-page-header">
         <h1>Curriculum Vitae</h1>
-        <p>A journey through my professional experience and skills.</p>
+        <p>Professional experience from 2008 to now. Filter by technology to find relevant roles.</p>
       </header>
       
       <SkillFilter 
@@ -56,7 +56,7 @@ const CVPage = ({ initialItems }: CVPageProps) => {
         <Timeline items={filteredItems} />
       ) : (
         <div className="no-results">
-          <p>No items match the selected skills. Try clearing the filters.</p>
+          <p>No roles match all the selected skills. Try removing a filter or two.</p>
           <Button variant="default" onClick={clearFilters}>Clear Filters</Button>
         </div>
       )}

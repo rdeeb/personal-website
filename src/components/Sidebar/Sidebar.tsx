@@ -28,8 +28,8 @@ const Sidebar = () => {
     <aside className="sidebar">
       <Panel title="About Me" icon={<UserCircle size={16} />}>
         <p>
-          Senior Full Stack Developer with 20+ years of experience.
-          Specializing in React, TypeScript, and high-performance web applications.
+          20+ years building web applications — strong depth in React, TypeScript,
+          and API-driven frontends. I ship clean, performant UI in remote Agile teams.
         </p>
       </Panel>
 
@@ -52,8 +52,8 @@ const Sidebar = () => {
       </Panel>
 
       <Panel title="My Core Skills" icon={<Zap size={16} />}>
-        <p>These are my daily driver skills.</p>
-        {skillsData.map((skill, index) => (
+        <p>Tools I reach for on every project.</p>
+        {skillsData.map((skill) => (
           <SkillBar 
             key={`skill-${skill.name}`}
             name={skill.name} 
@@ -65,20 +65,20 @@ const Sidebar = () => {
 
       <Panel title="Socials" icon={<Heart size={16} />}>
         <div className="social-links">
-          <a href="https://github.com/rdeeb" target="_blank" rel="noopener noreferrer" className="social-button github">
-            <GitBranch size={20} />
+          <a href="https://github.com/rdeeb" target="_blank" rel="noopener noreferrer" className="social-button github" aria-label="GitHub (opens in new tab)">
+            <GitBranch size={20} aria-hidden="true" />
             <span>GitHub</span>
           </a>
-          <a href="https://linkedin.com/in/rdeeb" target="_blank" rel="noopener noreferrer" className="social-button linkedin">
-            <FileSharp size={20} />
+          <a href="https://linkedin.com/in/rdeeb" target="_blank" rel="noopener noreferrer" className="social-button linkedin" aria-label="LinkedIn (opens in new tab)">
+            <FileSharp size={20} aria-hidden="true" />
             <span>LinkedIn</span>
           </a>
-          <a href="https://www.instagram.com/rdeeb" target="_blank" rel="noopener noreferrer" className="social-button instagram">
-            <Camera size={20} />
+          <a href="https://www.instagram.com/rdeeb" target="_blank" rel="noopener noreferrer" className="social-button instagram" aria-label="Instagram (opens in new tab)">
+            <Camera size={20} aria-hidden="true" />
             <span>Instagram</span>
           </a>
-          <a href="https://www.youtube.com/@rdeebbuilds" target="_blank" rel="noopener noreferrer" className="social-button youtube">
-            <VideoSharp size={20} />
+          <a href="https://www.youtube.com/@rdeebbuilds" target="_blank" rel="noopener noreferrer" className="social-button youtube" aria-label="YouTube (opens in new tab)">
+            <VideoSharp size={20} aria-hidden="true" />
             <span>YouTube</span>
           </a>
         </div>
