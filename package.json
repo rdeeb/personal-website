@@ -13,7 +13,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.2",
