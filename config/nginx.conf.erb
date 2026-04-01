@@ -19,6 +19,8 @@ http {
 
   server {
     listen <%= ENV['PORT'] %>;
+    port_in_redirect off;
+    absolute_redirect off;
     charset utf-8;
     root dist/;
     index index.html;
