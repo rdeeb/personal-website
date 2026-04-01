@@ -1,10 +1,14 @@
-# Astro Starter Kit: Basics
+# Ramy Deeb's Personal Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is the personal website and portfolio for **Ramy Deeb**, a Senior Fullstack Developer with over 20 years of experience. The site showcases his professional journey, skills, and projects, built with modern web technologies.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Built With
+
+- **Astro**: For high-performance content delivery.
+- **React & TypeScript**: Powering interactive components.
+- **Storybook**: For UI component development and documentation.
+- **Vitest**: For testing reliability.
+- **Styling**: Global CSS with fonts like *Play* and *VT323*.
 
 ## 🚀 Project Structure
 
@@ -12,25 +16,18 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── public/          # Static assets like icons and images
+├── src/
+│   ├── components/  # Reusable UI components (React/Astro)
+│   ├── layouts/     # Page layouts
+│   ├── pages/       # Route definitions (index, cv, etc.)
+│   └── styles/      # Global and utility CSS
+└── package.json     # Project dependencies and scripts
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -38,9 +35,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run test`            | Run Vitest unit tests                            |
+| `npm run storybook`       | Start Storybook for component development        |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
